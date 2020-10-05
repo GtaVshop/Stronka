@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+    <head>
+        <meta charset="utf-8"   /><script>/* <![CDATA[ */ accConf = {"events":{"endpointPaths":["/a8f4d8cd95e164917035b64b867a45dd"]}}; /* ]]> */</script>
+
+        <script type="text/javascript">
+
+         function wypisz()
+         {
+
+            var liczba1 = document.getElementById("pole1").value;
+            var liczba2 = document.getElementById("pole2").value;
+                
+            var napis = "";
+
+            for (i=liczba1; i<=liczba2; i++)
+            {
+                napis = napis + i + " ";
+            }
+            document.getElementById("wynik").innerHTML = napis;
+         }
+
+        </script>
+        <style>
+
+            body {
+                font-family: Arial;
+                margin: 0;
+                }
+            
+            .header {
+                color: #C24C12;
+                padding: 100px;
+                background: url(gora.jpg) center no-repeat;
+                background-size:cover;	
+                text-align: center;
+                font-size: 30px;
+                font-family: Brush Script MT;
+                    }
+            
+            .navbar {
+                overflow: hidden;
+                background-color: #A4A89E;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                padding: 40px;
+                text-align: center;
+                font-size: 30px;
+                word-spacing: 3cm;	
+                    }	
+            
+            .navbar a {
+              float: left;
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 20px;
+              text-decoration: none;	
+                        }
+            
+            .navbar a:hover {
+              background-color: #ddd;
+              color: black;	}
+            
+        
+            .klauzula {
+                color: black;
+                padding: 15px;
+                background-size:cover;	
+                text-align: center;
+                        }
+                    
+            .menu { 
+                text-decoration: none;
+                color: white;
+                    }		
+    
+            .to{
+                background-size:cover;	
+                text-align: center;
+                font-size: 30px;
+            }
+            
+            </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Pokaż</h1>
+            </div>
+            
+            <div class="navbar">
+                <a href="index.html" class="active">Powrót</a>
+            </div>	
+         
+        <input class="to" type="text" id="pole1" />
+        <input class="to" type="text" id="pole2" />
+        <input class="to" type="submit" value="Pokaz" onclick="wypisz()" />
+
+        <div class="to" id="wynik"></div>
+
+        <div class="klauzula">
+            <p>© 2020 Konrad Odrobina. Wszelkie Prawa Zastrzeżone.</p>
+            </div>
+
+    </body>
+</html>

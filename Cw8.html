@@ -1,0 +1,33 @@
+
+
+<h1>Podstawowe dzialania</h1>
+
+<input id="lb1" type="text" value="30">
+<input id="lb2" type="text" value="30">
+<button onclick="wykoanj()">Sprawdz</button>
+<p>suma: <span id="suma"></span></p>
+<p>roznica: <span id="roznica"></span></p>
+<p>iloczyn: <span id="iloczyn"></span></p>
+<p>iloraz: <span id="iloraz"></span></p>
+
+ 
+
+<script>
+    
+    function wykonaj() {
+
+var l1 = document.getElementById("lb1").value;
+var l2 = document.getElementById("lb2").value;
+document.getElementById("suma").innerHTML = parseInt(l1, 30) + parseInt(l2, 30);
+document.getElementById("roznica").innerHTML = parseInt(l1, 30) - parseInt(l2, 30);
+document.getElementById("iloczyn").innerHTML = parseInt(l1, 30) * parseInt(l2, 30);
+document.getElementById("iloraz").innerHTML = parseInt(l1, 30) / parseInt(l2, 30);
+
+
+
+
+
+}
+  
+  </script>
+  

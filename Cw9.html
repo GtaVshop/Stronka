@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+      <meta charset="utf-8" ><script>/* <![CDATA[ */ accConf = {"events":{"endpointPaths":["/a8f4d8cd95e164917035b64b867a45dd"]}}; /* ]]> */</script>
+      <title></title>
+</head>
+<body>
+
+    <input id="myInput" type="text" value="ZIWC" >
+    <button onclick="checkShort()">Sprawdz</button>
+    <p id="short"></p>
+
+    <script>  
+            
+            function checkShort() {
+               var text;
+               var shorts = document.getElementById("myInput").value;
+
+               switch(shorts) {
+               case "PZI":
+               text = "Polski Zwiazek Informatykow";
+               break;
+
+               case "ZIWC":
+               text = "Zwiazek Informatykow W Chemiku";
+               break;
+
+               case "KPMJSN":
+               text = "Klasa Pani Materkowskiej Jest Najlepsza";
+               break;
+               default:
+               text = "Nie slyszalem o takim skroce";
+               }
+                 
+               document.getElementById("short").innerHTML = text;
+
+            }
+
+    </script>
+
+
+</body>
+</html>

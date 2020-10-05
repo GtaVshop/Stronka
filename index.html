@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronka</title>
+
+    <style>
+
+		body {
+			font-family: Arial;
+			margin: 0;
+			}
+		
+		.header {
+			color: #C24C12;
+			padding: 100px;
+			background: url(gora.jpg) center no-repeat;
+			background-size:cover;	
+			text-align: center;
+			font-size: 30px;
+			font-family: Brush Script MT;
+				}
+		
+		.navbar {
+			overflow: hidden;
+			background-color: #A4A89E;
+			position: sticky;
+			position: -webkit-sticky;
+			top: 0;
+			padding: 40px;
+			text-align: center;
+			font-size: 30px;
+			word-spacing: 3cm;	
+				}
+				
+			.menu { 
+			text-decoration: none;
+			color: white;
+					}
+					
+		.mySlides {display:none;}
+		
+		.content {
+				padding:20px;
+				background-color: black;
+				text-align: center;
+				font-size: 20px;
+				color: white;
+				}
+				
+		.parallax {
+			  background-image: url("scroll.jpg");
+			  min-height: 250px; 
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+				  }		
+				
+		.pasek {
+			background-color:black;
+			height: 50px;
+				}
+				
+		.content2 {
+			width: top;
+			background-color: #F2F2F2;
+					}
+						.col-1 {
+						float: left;
+						width: 50%;
+						background-color: #F2F2F2;
+						height: 350px;
+						text-align: center;
+								}
+						.col-2 {
+						float: left;
+						width: 50%;
+						background-color: black;
+						height: 350px;
+						text-align: center;
+						color: white;
+								}		
+				
+		.kontakt {
+			background-color: Black;
+			text-align: center;
+			padding:20px;
+			font-size: 20px;
+			color: white;
+		}
+			
+			
+		.klauzula {
+			color: white;
+			padding: 100px;
+			background-size:cover;	
+			text-align: center;
+			}
+
+		
+			
+
+            </style>
+
+<script type="text/javascript">
+    function odliczanie()
+    {
+        var dzisiaj = new Date();
+ 
+        var dzien = dzisiaj.getDate();
+        var miesiac = dzisiaj.getMonth()+1;
+        var rok = dzisiaj.getFullYear();
+ 
+        var godzina = dzisiaj.getHours();
+        if (godzina<10) godzina = "0"+godzina;
+ 
+        var minuta = dzisiaj.getMinutes();
+        if (minuta<10) minuta = "0"+minuta;
+ 
+        var sekunda = dzisiaj.getSeconds();
+        if (sekunda<10) sekunda = "0"+sekunda;
+ 
+        document.getElementById("zegar").innerHTML = 
+        dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda;
+ 
+        setTimeout("odliczanie()",1000);
+ 
+                  }
+ 
+ 
+ 
+ 
+ </script>
+            
+
+</head>
+<body>
+
+    <div class="header">
+		<h1> Slider</h1></div>
+		
+		
+	
+		<div class="navbar">
+			<a href="#galeria" class="menu">Slider</a>
+			<a href="Cw2.html" class="menu">Ćw_2</a>
+			<a href="Cw3.html" class="menu">Ćw_3</a>
+            <a href="Cw4.html" class="menu">Ćw_4 </a>
+            <a href="Cw5.html" class="menu">Ćw_5</a>
+            <a href="Cw6.html" class="menu">Ćw_6</a>
+            <a href="Cw7.html" class="menu">Ćw_7</a>
+            <a href="Cw8.html" class="menu">Ćw_8</a>
+            <a href="Cw9.html" class="menu">Ćw_9</a>
+            <a href="Cw10.html" class="menu">Ćw_10</a>
+            <a href="Cw11.html" class="menu">Ćw_11</a>
+            <a href="Cw12.html" class="menu">Ćw_12</a>
+            <a href="Cw13.html" class="menu">Ćw_13</a>
+            <a href="Zegar.html" class="menu">Zegar</a>
+		</div>
+		
+		<div class="w3-content w3-display-container" id="galeria">
+		<img class="mySlides" src="zdj1.jpg" style="width:100%;max-height: 800px; ">
+		<img class="mySlides" src="zdj2.jpg" style="width:100%;max-height: 800px;">
+		<img class="mySlides" src="zdj3.jpg" style="width:100%;max-height: 800px;">
+		<img class="mySlides" src="zdj4.jpg" style="width:100%;max-height: 800px;">
+		</div>
+		
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+ 			 var i;
+ 			 var x = document.getElementsByClassName("mySlides");
+ 			 for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";  
+ 			 }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+        </script>
+
+         
+         
+         
+	
+		<div class="content">
+			<h1 style="font-family: 'URW Chancery L'; color: #C6A801 "> </head>
+                <body onload="odliczanie();">
+                
+                    <div id="zegar"></div></h1>
+			<div onload="odliczanie();">
+
+                <div id="zegar"></div>
+		</div>
+		
+		<div class="parallax"></div>
+		
+		<div class="pasek">
+		</div>
+		
+		
+		
+		<div class="klauzula">
+		<p style="text-align: center">© 2020 Konrad Odrobina. Wszelkie Prawa Zastrzeżone.</p>
+		</div>
+		
+    
+</body>
+</html>

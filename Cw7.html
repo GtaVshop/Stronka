@@ -1,0 +1,20 @@
+<h1>Mnozenie</h1>
+
+<p id="wynik"></p>
+
+<input id="liczba1" type="text" value="12">
+<input id="liczba2" type="text" value="12">
+<button onclick="dzialanie()">Sprawdz</button>
+<p id="wynik"></p>
+
+<script>
+ 
+  function dzialanie() {
+
+    var x = document.getElementById("liczba1").value;
+    var y = document.getElementById("liczba2").value;
+    var z = x * y;
+    document.getElementById("wynik").innerHTML = z;
+
+  }
+</script>
